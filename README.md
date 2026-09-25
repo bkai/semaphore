@@ -1,3 +1,18 @@
+Semaphore — play it without a server
+====================================
+`public/static.html` is a server-less version of the app: the letters are
+turned into semaphore poses in the browser and the message is kept in the
+link itself (`static.html#swallows%20forever`), so no Node or MongoDB is needed.
+
+    python3 -m http.server -d public 8000
+    # then open http://localhost:8000/static.html
+
+Opening `public/static.html` straight from disk works too.
+
+`docs/` is a copy of the same page for GitHub Pages (Settings → Pages →
+"Deploy from a branch", folder `/docs`). Don't edit it by hand: change the
+files in `public/` and run `npm run docs` to regenerate it.
+
 Running a custom/latest Node[.js] version on RedHat's OpenShift PaaS
 ====================================================================
 This git repository is a sample Node application along with the
