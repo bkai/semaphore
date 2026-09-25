@@ -9,6 +9,10 @@ link itself (`static.html#swallows%20forever`), so no Node or MongoDB is needed.
 
 Opening `public/static.html` straight from disk works too.
 
+`docs/` is a copy of the same page for GitHub Pages (Settings → Pages →
+"Deploy from a branch", folder `/docs`). Don't edit it by hand: change the
+files in `public/` and run `npm run docs` to regenerate it.
+
 Running a custom/latest Node[.js] version on RedHat's OpenShift PaaS
 ====================================================================
 This git repository is a sample Node application along with the

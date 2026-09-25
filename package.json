@@ -3,7 +3,8 @@
   "version": "0.0.2",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "docs": "rm -rf docs && mkdir docs && cp -r public/fonts public/javascripts public/stylesheets docs/ && rm docs/javascripts/sem.js && cp public/static.html docs/index.html && touch docs/.nojekyll"
   },
   "dependencies": {
     "express": "3.1.1",
